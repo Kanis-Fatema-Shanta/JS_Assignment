@@ -37,7 +37,7 @@ console.log(WoodOutput);
 
 
 //-----------BrickCalculaator--------------
-// brickCalculator
+
 function brickCalculator (building) {
     var feetBricks = 1000;
     if (building >= 0 && building <= 10) {
@@ -60,9 +60,30 @@ function brickCalculator (building) {
         return totalBricks;
     }
     else {
-        return "Please enter the positive value."
+        return "Opps! Please enter the positive value."
     }
   }
   
   var bricksNumbers = brickCalculator(30);
   console.log(bricksNumbers);
+
+  //-----------TinyFriends--------------
+  function tinyFriend (nameArray) {
+    var smallName = nameArray[0];
+    for (var i = 0; i < nameArray.length; i++) {
+        var list = nameArray[i];
+        if ( list.length !='' && list.length < smallName.length) {
+            smallName = list;
+        }
+        if(list.length =='')
+        {
+            return "Opps! Please Enter a name,name can't be a empty string"
+        }
+    }
+    return smallName;  
+}
+
+var friend = tinyFriend([ 'Shanta','Tonu','Peu','Monisha','Dristy']); //if you set '' or "" this will give a message to you
+
+console.log(friend);
+

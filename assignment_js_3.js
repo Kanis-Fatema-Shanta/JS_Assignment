@@ -68,6 +68,7 @@ function brickCalculator (building) {
   console.log(bricksNumbers);
 
   //-----------TinyFriends--------------
+
   function tinyFriend (nameArray) {
     var smallName = nameArray[0];
     for (var i = 0; i < nameArray.length; i++) {
@@ -83,7 +84,7 @@ function brickCalculator (building) {
     return smallName;  
 }
 
-var friend = tinyFriend([ 'Shanta','Tonu','Peu','Monisha','Dristy']); //if you set '' or "" this will give a message to you
+var friend = tinyFriend([ 'Shanta','Peu','Tonu','Monisha','Dristy']); //if you set '' or "" this will give a message to you
 
 console.log(friend);
 

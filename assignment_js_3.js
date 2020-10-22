@@ -14,3 +14,23 @@ function feetToMile(feet){
 
 var result = feetToMile(1);
 console.log(result)
+
+//--------WoodCalculator-----------
+
+function woodCalculator(chair, table, bed){
+
+    if(chair >= 0 && table >= 0 && bed >= 0){
+        var chairWood = (chair * 1) ;
+        var tableWood = (table * 3) ;
+        var bedWood   = (bed * 5) ;
+
+        var totalWood = (chairWood + tableWood + bedWood);
+        return totalWood;
+    }
+    else{
+        return "Opps! Please Enter a positive value."
+    }
+}
+
+var WoodOutput = woodCalculator(1,1,1);
+console.log(WoodOutput);
